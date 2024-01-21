@@ -26,6 +26,16 @@
       .garamand {
         font-family: "EB Garamond", serif;
       }
+      .ligal-btn {
+        border-radius: 8px;
+        background: #b68c5a;
+        color: #fff;
+        font-family: Poppins;
+        font-size: 18px;
+        font-weight: 600;
+        padding: 18px 30px;
+        text-align: center;
+      }
     </style>
     <!-- TAILWIND RANDOM STYLE -->
     <script>
@@ -34,11 +44,17 @@
           extend: {
             colors: {
               clifford: "#da373d",
+              "text-grey": "#707070",
             },
           },
         },
       };
     </script>
+    <!-- FONT AWESOME KIT -->
+    <script
+      src="https://kit.fontawesome.com/594df36906.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header class="container mx-auto">
@@ -66,8 +82,11 @@
                 tabindex="0"
                 class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
               >
-                <li><a>Item 1</a></li>
-                <li><a>Item 3</a></li>
+                <li><a>Home</a></li>
+                <li><a>Services</a></li>
+                <li><a>Blog</a></li>
+                <li><a>Cases</a></li>
+                <li><a>Contact Us</a></li>
               </ul>
             </div>
 
@@ -77,15 +96,25 @@
           </div>
           <div class="navbar-center hidden lg:flex">
             <ul class="menu menu-horizontal px-1 poppins">
-              <li><a>Home</a></li>
-              <li><a>Services</a></li>
-              <li><a>Cases</a></li>
-              <li><a>Blog</a></li>
-              <li><a>Contact Us</a></li>
+              <li>
+                <a>Home</a>
+              </li>
+              <li>
+                <a>Services <i class="fa-solid fa-chevron-right"></i></a>
+              </li>
+              <li>
+                <a>Cases <i class="fa-solid fa-chevron-right"></i></a>
+              </li>
+              <li>
+                <a>Blog <i class="fa-solid fa-chevron-right"></i></a>
+              </li>
+              <li>
+                <a>Contact Us <i class="fa-solid fa-chevron-right"></i></a>
+              </li>
             </ul>
           </div>
           <div class="navbar-end poppins">
-            <a class="btn">Button</a>
+            <a class="btn ligal-btn">Free Consultation</a>
           </div>
         </div>
       </nav>
